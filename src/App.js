@@ -13,25 +13,23 @@ const Boton = styled.button`
   background-size: 300px;
   font-family: Arial, Helvetica, sans-serif;
   color: #FFF;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 1rem 3rem;
   font-size: 2rem;
   border: 2px solid black;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 7px;
 `;
 
 function App() {
 
-  //consultar API
   const consultarAPI = () => {
     console.log('consultando...');
-  }
+  };
 
   return (
     <Contenedor>
       <Boton
-        onClick={consultarAPI}
+        onClick={ consultarAPI }
       >
         Obtener Frase
       </Boton>
