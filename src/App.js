@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
 import styled from '@emotion/styled';
+import Frase from './components/Frase';
 
 const Contenedor = styled.div`
   display: flex;
@@ -9,29 +10,46 @@ const Contenedor = styled.div`
 `;
 
 const Boton = styled.button`
-  background: -webkit-linear-gradient(top left, #007D35 0%, #007D35 40%, #0F574E 100%);
+  background: -webkit-linear-gradient(top left, #007d35 0%, #007d35 40%, #0f574e 100%);
   background-size: 300px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FFF;
+  font-family:  Arial, Helvetica, sans-serif;
+  color: #fff;
   margin-top: 3rem;
   padding: 1rem 3rem;
   font-size: 2rem;
   border: 2px solid black;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 20px;
+  transition: background-size .8s ease;
+
+  :hover {
+    cursor: pointer;
+    background-size: 400px;
+  }
 `;
 
 function App() {
 
-  //consultar API
-  const consultarAPI = () => {
-    console.log('consultando...');
-  }
+  //State de freases
+  const [ frase, guardarFrase ] = useState({});
+
+  const consultarAPI = async () => {
+    const api = await (await fetch('http://breaking-bad-quotes.herokuapp.com/v1/quotes'));
+    const frase = await api.json();
+    guardarFrase(frase[0]);
+  };
+
+  //Cargar una frase por defecto la primera vez que se abre la web
+  useEffect(() => {
+    consultarAPI();
+  }, []);
 
   return (
     <Contenedor>
+      <Frase
+        frase={frase}
+      />
       <Boton
-        onClick={consultarAPI}
+        onClick={ consultarAPI }
       >
         Obtener Frase
       </Boton>
