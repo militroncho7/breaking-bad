@@ -1,22 +1,21 @@
-![Tu tiempo](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1611318403/proyectos/Clima/clima_k9e3pc.png)
+![Breaking Bad](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1611563557/proyectos/Breaking%20Bad/logo-breakingbad_m2hcu2.jpg)
 
-# Buscador de clima
+# Las mejores frases de Breaking Bad
 
-Aplicación web te permite consultar el tiempo de tu ciudad en tiempo real [¡Consulta tu tiempo! ⛅️](https://practical-bell-6b3f44.netlify.app/).
+Porque nunca sabes cuando vas a necesitar una buena frase... ¡Aquí tienes una app que te ayuda a tener siempre la mejor frase de tu serie favorita en cualquier momento!
+
+[Breaking Bad 👨🏻‍🔬🧪](https://eloquent-lalande-3bf23b.netlify.app/).
 
 ## Sitio Web
 ---
-![Sitio web](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1611561757/proyectos/Clima/screencapture-practical-bell-6b3f44-netlify-app-2021-01-25-09_01_39_xeqvnc.png)
+![Sitio web](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1611563558/proyectos/Breaking%20Bad/screencapture-localhost-3000-2021-01-25-09_22_47_brf2lp.png)
 
 App realizada mediante la libería React.js.
 
 - Creada con componentes funcionales
-- Manenjando los diferentes estados en el formulario (Hook useState)
+- Manenjando los diferentes estados en los inputs (Hook useState)
 - Consultas mediante endpoints en la API ( URLs que responden a una petición)
 - Utilización de hook useEffect y sus dependecias para consultas a la API
-- Validación de formularios (Strings vacios, numbers, ...)
-- Mensajes del error al rellenar los inputs
-- Reinicio del formulario cuando lo envía el usuario
 - Trabajada con Styled-Components
 - Carga condicional de componenetes en función del componente que tiene que aparecer
 - Documentando con PropTypes
@@ -25,7 +24,7 @@ App realizada mediante la libería React.js.
 - Trabajo en GitHub mediante ramas y commits
 - Totalmente Responsive:
 ---
-![Responsive](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1611561906/proyectos/Clima/iphone_1_ewt8rw.png)
+![Responsive](https://res.cloudinary.com/dhd9jgrw3/image/upload/v1611563557/proyectos/Breaking%20Bad/iphone_1_gtmugj.png)
 
 
 ### Cómo contribuir
